@@ -1,7 +1,5 @@
 import { AppRegistry, Dimensions } from 'react-native';
 import {DrawerNavigator, TabNavigator,StackNavigator} from 'react-navigation';
-// import App from './App';
-//components
 
 import HomeComponent from './app/components/HomeComponent';
 import TrendingComponent from './app/components/InfoComponent';
@@ -14,7 +12,8 @@ import BaxterComp from './app/components/Baxter';
 import KhuzwayoComp from './app/components/khuzwayo';
 import JobComp from './app/components/job';
 import FranceComp from './app/components/France';
-import SplashComp from './app/components/SplashScreen';
+
+
 
 
 //screen names
@@ -140,4 +139,5 @@ let drawerNavigatorConfig ={
 
 };
 const App = DrawerNavigator(routeConfigs,drawerNavigatorConfig);
+
 AppRegistry.registerComponent('sowetoNewz', () => App);
