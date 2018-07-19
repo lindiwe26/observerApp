@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-import * as actions from './actions';
+import * as actions from './app/actions';
 import {connect} from 'react-redux';
 
 
-import {AppNav} from './app/config/Navigation'
+import {AppNav} from './app/config/Navigation';
 
 
 class App extends Component {
