@@ -4,7 +4,7 @@ import {DrawerNavigator, TabNavigator,StackNavigator} from 'react-navigation';
 import HomeComponent from './app/components/HomeComponent';
 import TrendingComponent from './app/components/InfoComponent';
 import SportsComponent from './app/components/SettingsComponent';
-import VideosComponent from './app/components/CloudComponent';
+import VideosComponent from './app/components/Videos';
 import AboutComponent from './app/components/AboutComponent';
 import ContactComponent from './app/components/ContactComponent';
 import MortalityComp from './app/components/mortality';
