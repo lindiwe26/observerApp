@@ -54,6 +54,9 @@ class InfoComponent extends Component {
                 navigate('Home');
 
             }}>
+
+
+            
             <Text style= {{color:'white', fontSize: 22, alignSelf: 'center',  }}> Go to Home</Text>
 
             </TouchableHighlight>

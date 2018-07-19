@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import { AppRegistry, Dimensions } from 'react-native';
 import {DrawerNavigator, TabNavigator,StackNavigator} from 'react-navigation';
 
@@ -14,7 +15,12 @@ import JobComp from './app/components/job';
 import FranceComp from './app/components/France';
 
 
+import {Provider} from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reduxThunk from 'redux-thunk';
+import reducers from './app/reducers';
 
+const store = createStore(reducers,{}, applyMiddleware(reduxThunk));
 
 //screen names
 import { Home,Trending,Sports,Videos, About,Contact} from './screenNames';
@@ -140,4 +146,14 @@ let drawerNavigatorConfig ={
 };
 const App = DrawerNavigator(routeConfigs,drawerNavigatorConfig);
 
-AppRegistry.registerComponent('sowetoNewz', () => App);
+export default class Index extends Component {
+        render() {
+        return(
+            <Provider store={store}>
+            <App />
+        </Provider>
+        )
+    }
+}
+
+AppRegistry.registerComponent('sowetoNewz', () => Index);
