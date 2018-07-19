@@ -1,5 +1,8 @@
-import {FETCH_ARTICLES} from './types';
-import {FETCH_VIDEO} from '.types';
+//import {FETCH_ARTICLES} from './types';
+//import {FETCH_VIDEO} from '.types';
+
+
+
 
 export const fetchArticles = () => async dispatch =>{
     const res = await fetch ('/api/articles')
